@@ -55,6 +55,133 @@
 
   
     
+    <h3 class="article-title"><a href="/2021/03/21/spring-boot-demo-idea/"><span>使用IDEA创建SpringBoot项目</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2021/03/21/spring-boot-demo-idea/" rel="bookmark">
+        <time class="entry-date published" datetime="2021-03-21T10:51:33.000Z">
+          2021-03-21
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <h2 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h2><p>首先，新建一个项目，项目类型选择<code>Spring Initializr</code>。如果 <code>Project SDK</code> 不存在的话，可以点击旁边的按钮选择自己电脑上安装的<code>JDK</code>的安装路径；或者点击下拉列表，选择自己想要的<code>JDK</code>版本。其它默认就好，接着点击下一步。</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/65YUxg"><img src="https://z3.ax1x.com/2021/03/21/65YUxg.png" alt="65YUxg.png"></a></p>
+<h2 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h2><p>接着就要设置这个项目的基本信息了。如下表所示：</p>
+<table>
+<thead>
+<tr>
+<th>英文</th>
+<th>中文</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Group</td>
+<td>开发此项目的组织</td>
+<td>一般为域名的倒写</td>
+</tr>
+<tr>
+<td>Arifact</td>
+<td>项目的标识</td>
+<td></td>
+</tr>
+<tr>
+<td>Type</td>
+<td>项目类型</td>
+<td>Maven 或者 Gradle</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>项目使用的编程语言</td>
+<td>有 Java、Kotlin 等</td>
+</tr>
+<tr>
+<td>Packaging</td>
+<td>项目的打包方式</td>
+<td>Jar 包 或者 war 包</td>
+</tr>
+<tr>
+<td>Java Version</td>
+<td>JDK 的版本</td>
+<td></td>
+</tr>
+<tr>
+<td>Version</td>
+<td>此项目的版本</td>
+<td></td>
+</tr>
+<tr>
+<td>Name</td>
+<td>项目名</td>
+<td></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>项目描述</td>
+<td></td>
+</tr>
+<tr>
+<td>Package</td>
+<td>包名</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/65tkQg"><img src="https://z3.ax1x.com/2021/03/21/65tkQg.png" alt="65tkQg.png"></a></p>
+<h2 id="Step-3"><a href="#Step-3" class="headerlink" title="Step 3"></a>Step 3</h2><p>这一步要添加项目的依赖了。如下图所示，可以直接选择自己需要的依赖项，或者在搜索框中进行搜索。因为这是我们初学 Spring Boot , 所以选择一个 <code>Spring Web</code> 依赖项就够用了。在窗口右上方可以选择 <code>Spring Boot</code> 的版本。</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/65Bqr8"><img src="https://z3.ax1x.com/2021/03/21/65Bqr8.png" alt="65Bqr8.png"></a></p>
+<h2 id="Step-4"><a href="#Step-4" class="headerlink" title="Step 4"></a>Step 4</h2><p>然后，设置一下项目名，和项目的存放路径</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/65DOQx"><img src="https://z3.ax1x.com/2021/03/21/65DOQx.png" alt="65DOQx.png"></a></p>
+<h2 id="Step-5"><a href="#Step-5" class="headerlink" title="Step 5"></a>Step 5</h2><p>等待 IDEA 下载构建项目所需要的文件</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/65rEOf"><img src="https://z3.ax1x.com/2021/03/21/65rEOf.png" alt="65rEOf.png"></a></p>
+<h2 id="Step-6"><a href="#Step-6" class="headerlink" title="Step 6"></a>Step 6</h2><p>项目创建完毕后，目录结构大概就是这个样子</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/65rqAg"><img src="https://z3.ax1x.com/2021/03/21/65rqAg.png" alt="65rqAg.png"></a></p>
+<h2 id="Step-7"><a href="#Step-7" class="headerlink" title="Step 7"></a>Step 7</h2><p>接着，我们可以打开项目中的 Application 类，类似下图这样，添加一个返回 <code>Hello World! </code>的 <code>hello</code> 方法, 并加上相应的注解。然后，就可以点击运行按钮，开始运行这个项目了。下方的控制台中会输出一些相应的信息。</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/65siEF"><img src="https://z3.ax1x.com/2021/03/21/65siEF.png" alt="65siEF.png"></a></p>
+<h2 id="Step-8"><a href="#Step-8" class="headerlink" title="Step 8"></a>Step 8</h2><p>在上一步的控制台输出信息中，出现<code>Started DemoApplication in 1.524 seconds</code>这样的字样，就说明项目已经启动成功了。同时，还能看到项目内置的 Tomcat 服务器的默认端口号是 <code>8080</code> 。此时，我们可以打开一个浏览器，来验证项目是否能够正常工作。如下图所示，我们可以在浏览器的地址栏中输入 <code>localhost:8080/hello</code> , 页面正常显示出了 <code>Hello World!</code> ，大功告成！</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/65yuzn"><img src="https://z3.ax1x.com/2021/03/21/65yuzn.png" alt="65yuzn.png"></a></p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/SpringBoot/">SpringBoot</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
     <h3 class="article-title"><a href="/2021/03/09/build-blog-using-hexo/"><span>使用 Hexo 搭建博客</span></a></h3>
     
   
@@ -76,19 +203,25 @@
     <div class="entry">
       
         <h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>因为 Hexo 的源代码还有主题都放在开源网站 Github 上，所以在搭建博客的过程中，我们会经常和它打交道。因此，安装一下 Git 会让我们轻松一些。我们可以在它的<a target="_blank" rel="noopener" href="https://git-scm.com/">官网下载</a>, 然后安装。</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/658N24"><img src="https://z3.ax1x.com/2021/03/21/658N24.png" alt="658N24.png"></a></p>
 <h3 id="安装Node"><a href="#安装Node" class="headerlink" title="安装Node"></a>安装Node</h3><p>Hexo 博客本身就是基于 Node.js 开发，所以如果没有安装 Node.js ，Hexo 根本无法运行。你可以去<a target="_blank" rel="noopener" href="https://nodejs.org/en/">官网下载</a>。安装完成后，你可以打开命令行窗口，输入以下命令来检查 Node.js 是否安装成功</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
 
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/6580q1"><img src="https://z3.ax1x.com/2021/03/21/6580q1.png" alt="6580q1.png"></a></p>
 <h2 id="开始安装Hexo"><a href="#开始安装Hexo" class="headerlink" title="开始安装Hexo"></a>开始安装Hexo</h2><p>首先，我们可以准备一个文件夹，专门用来存放和博客相关的内容，后面安装 Hexo, 以及写博客都在这个文件夹内</p>
 <p>使用 npm(安装了Node.js后，就有npm了) 命令安装 Hexo</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <p>hexo-cli 是 Hexo 的命令行工具，可以用它来配置 Hexo</p>
 <p>接下来，我们使用它来初始化 Hexo</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-<p>执行这条命令后，就会在该文件夹下生成一系列内容</p>
+<p>执行这条命令后，就会在该文件夹下生成一系列内容（不一定和这个完全一样）</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/658IdP"><img src="https://z3.ax1x.com/2021/03/21/658IdP.png" alt="658IdP.png"></a></p>
 <p>然后，依次执行下面这两条命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>打开浏览器，在地址栏输入 <code>localhost:4000</code>, 就可以看到运行效果了</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/65cuD0"><img src="https://z3.ax1x.com/2021/03/21/65cuD0.png" alt="65cuD0.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/65cha8"><img src="https://z3.ax1x.com/2021/03/21/65cha8.png" alt="65cha8.png"></a></p>
+<p>打开浏览器，在地址栏输入 <code>localhost:4000</code>, 就可以看到运行效果了 (每个人的主题可能都不一样，这个后期是可以换的)</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/65cB5D"><img src="https://z3.ax1x.com/2021/03/21/65cB5D.png" alt="65cB5D.png"></a></p>
 
       
     </div>
@@ -100,6 +233,13 @@
 
     
 
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/Hexo/">Hexo</a>
+    </span>
     
 
     </div>
